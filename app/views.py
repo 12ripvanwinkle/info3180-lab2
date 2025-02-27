@@ -1,9 +1,11 @@
 from app import app
 from flask import render_template, request, redirect, url_for, flash
+from datetime import datetime
 
 
 ###
 # Routing for your application.
+
 ###
 
 @app.route('/')
@@ -45,3 +47,17 @@ def add_header(response):
 def page_not_found(error):
     """Custom 404 page."""
     return render_template('404.html'), 404
+
+@app.route('/profile')
+def profile():
+    """Render the profile page."""
+    dateJoined = datetime.now()
+    formatted_date = format_date_joined(dateJoined)
+
+    return render_template('profile.html', dateJoined = formatted_date)
+
+def format_date_joined(date):
+    if isinstance(date, datetime):
+        return date.strftime("%B, %Y")
+    else:
+        raise ValueError("The provided date is not a valid datetime object")

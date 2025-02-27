@@ -1,0 +1,20 @@
+#profilePic {
+    border-radius: 50%; /* Circular */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    left: 545px;
+    z-index: 2;
+}
+#name, #username, #location, #date, #bio{
+    position: relative;
+    top: 180px;
+    text-align: center; /* Center text horizontally */
+}
+.info {
+    background-color: #8f1212; /* Example background color */
+    height: 400px;
+    position: relative;
+    top: -100px;
+}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="" srcset="" id="profilePic">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+
+    <div class="info">
+        <p id="name">Nitesh Leyow</p>
+        <p id="username">@ripvanwinkle</p>
+        <p id="location">Kingston,Jamaica</p>
+        <p id="date">You joined on {{ date_joined }}</p>
+    </div>
+    <p id="bio">I am a student who takes web dev 2</p>
+    <p id="numposts">0</p>
+    <p id="postsText">Posts</p>
+    <p id="numfollowing">10</p>
+    <p id="followingText">Following</p>
+    <p id="numfollowers">10</p>
+    <p id="followersText">Followers</p>
+
+    <button class="btn btn-primary">Follow</button>
+
+
+{% endblock %}
