@@ -51,10 +51,12 @@ def page_not_found(error):
 @app.route('/profile')
 def profile():
     """Render the profile page."""
-    dateJoined = datetime.now()
+    # Convert the tuple to a datetime object
+    dateJoined = datetime(2025, 2, 26)  # Create a datetime object from the tuple
+
     formatted_date = format_date_joined(dateJoined)
 
-    return render_template('profile.html', dateJoined = formatted_date)
+    return render_template('profile.html', dateJoined=formatted_date)
 
 def format_date_joined(date):
     if isinstance(date, datetime):
