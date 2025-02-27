@@ -4,17 +4,63 @@
     height: 200px;
     object-fit: cover;
     position: relative;
+    top: 110px;
     left: 545px;
     z-index: 2;
 }
 #name, #username, #location, #date, #bio{
     position: relative;
-    top: 180px;
+    top: 250px;
     text-align: center; /* Center text horizontally */
 }
 .info {
     background-color: #8f1212; /* Example background color */
     height: 400px;
     position: relative;
+    top: -100px;
+}
+#bio
+{
+    position: relative;
+    top: -40px;
+}
+#numposts
+{
+    position: relative;
+    left: 500px;
+}
+#postsText
+{
+    position: relative;
+    left: 500px;
+}
+#numfollowing
+{
+    position: relative;
+    left: 600px;
+    top: -75px;
+}
+#followingText
+{
+    position: relative;
+    left: 600px;
+    top: -78px;
+}
+#numfollowers
+{
+    position: relative;
+    left: 730px;
+    top: -150px;
+}
+#followersText
+{
+    position: relative;
+    left: 730px;
+    top: -153px;
+}
+#btn
+{
+    position: relative;
+    left: 600px;
     top: -100px;
 }
